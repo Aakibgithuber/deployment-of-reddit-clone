@@ -31,11 +31,11 @@ resource "aws_security_group" "Jenkins-sg" {
 
 
 resource "aws_instance" "web" {
-  ami                    = "ami-0c7217cdde317cfec"
+  ami                    = "ami-0522ab6e1ddcc7055"
   instance_type          = "t2.large"
   key_name               = "my key"
   vpc_security_group_ids = [aws_security_group.Jenkins-sg.id]
-  user_data              = templatefile("./install_jenkins.sh", {})
+  user_data              = templatefile("./EC2.sh", {})
 
   tags = {
     Name = "amazon clone"
