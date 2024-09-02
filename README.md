@@ -15,7 +15,7 @@ You can install Prerequisites by doing this steps. [click here & complete all st
 ## Installation
 Follow these steps to install and run the Reddit clone app on your local machine:
 
-1) Clone this repository to your local machine: `git clone https://github.com/LondheShubham153/reddit-clone-k8s-ingress.git`
+1) Clone this repository to your local machine: `https://github.com/Aakibgithuber/deployment-of-reddit-clone.git`
 2) Navigate to the project directory: `cd reddit-clone-k8s-ingress`
 3) Build the Docker image for the Reddit clone app: `docker build -t reddit-clone-app .`
 4) Deploy the app to Kubernetes: `kubectl apply -f deployment.yaml`
